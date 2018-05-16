@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn-show").click(function(){
+			$("#tableshow").show();
+		});
+	});
+</script>
+
+<body>
+	<button type="button" id="btn-show" value="show">Show text</button>
+	 <!--/*@thymesVar id="list" type="peter.cong.demo.Entity.MentorEntity"*/-->
+                            <!--/*@thymesVar id="listMentor" type=""*/-->
+	<p class="hidden" id="test1">show all it</p>
+	
+	<c:forEach>
+	
+	</c:forEach>
+		<div>
+			<span th:utext="${listMentor.name}">
+				...
+			</span>
+		</div>
+	<p id="test2">This is another <b>bold</b> paragraph.</p>
+</body>
+</html>
